@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161011180912) do
+ActiveRecord::Schema.define(version: 20161011181321) do
 
   create_table "cats", force: true do |t|
     t.string "name"
   end
 
   create_table "users", force: true do |t|
-    t.string   "name"
+    t.string   "username"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
