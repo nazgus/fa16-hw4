@@ -1,0 +1,40 @@
+<%= link_to "Make a new form", pages_new_path %>
+
+<table>
+  <tr>
+    <td>Cat Name</td>
+  </tr>
+  <% @cats.each do |cat| %>
+    <tr>
+      <td> <%= cat.name %> </td>
+    </tr>
+  <% end %>
+</table>
+
+<table>
+  <tr>
+    <td>tasks</td>
+    <td>finished</td>
+  </tr>
+  <% @todos.each do |todo| %>
+    <tr>
+      <td> <%= todo.tasks %> </td>
+      <td> <%= todo.finished %> </td>
+    </tr>
+  <% end %>
+</table>
+
+<table>
+  <tr>
+    <td>username</td>
+    <td>email</td>
+    <td>age</td>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td> <%= user.username %> </td>
+      <td> <%= user.email %> </td>
+      <td> <%= user.age %> </td>
+    </tr>
+  <% end %>
+</table>
